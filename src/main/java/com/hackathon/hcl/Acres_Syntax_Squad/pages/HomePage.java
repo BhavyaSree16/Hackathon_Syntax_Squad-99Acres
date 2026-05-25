@@ -69,7 +69,7 @@ public class HomePage extends BasePage {
     // Enter Location
     public HomePage enterLocation() {
 
-        enterText(searchInput, "Hyderabad");
+        enterText(searchInput, "Pune");
         return this;
     }
 
@@ -102,9 +102,16 @@ public class HomePage extends BasePage {
     }
 
     // Click Final Search Button
-    public HomePage clickSearchButton() {
+//    public HomePage clickSearchButton() {
+//
+//        clickElement(searchButton);
+//        return this;
+//    }
+    
+    public SearchResult clickSearchButton() {
 
         clickElement(searchButton);
-        return this;
+
+        return new SearchResult(driver);
     }
 }

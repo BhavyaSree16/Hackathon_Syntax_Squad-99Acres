@@ -7,7 +7,6 @@
         <methods>
           <include name="setUp"/>
           <include name="testPropertySearchFlow"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest -->
     </classes>
