@@ -16,8 +16,12 @@ public class PropertySearchTest extends BaseTest {
                 .acceptCookies()
                 .clickBuyOption()
                 .enterLocation()
-                .selectFirstSuggestion();
+                .selectFirstSuggestion()
+                .reopenSearchPanel()
+                .openBedroomDropdown()
+                .selectTwoBhk()
+                .clickSearchButton();
 
-        System.out.println("Homepage flow executed successfully");
+        System.out.println("Property Search Flow Executed Successfully");
     }
 }

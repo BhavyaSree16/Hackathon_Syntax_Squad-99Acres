@@ -31,6 +31,22 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "(//ul[@id='suggestions_custom']//li)[1]")
     private WebElement firstSuggestion;
 
+    // Search Panel / Search Bar
+    @FindBy(id = "keyword2")
+    private WebElement searchBar;
+
+    // Bedroom Dropdown
+    @FindBy(id = "bedroom_num_wrap")
+    private WebElement bedroomDropdown;
+
+    // 2 BHK Option
+    @FindBy(xpath = "//span[text()='2 BHK']")
+    private WebElement twoBhkOption;
+
+    // Final Search Button
+    @FindBy(xpath = "//span[text()='Search']")
+    private WebElement searchButton;
+
     // Accept Cookies
     public HomePage acceptCookies() {
 
@@ -61,6 +77,34 @@ public class HomePage extends BasePage {
     public HomePage selectFirstSuggestion() {
 
         clickElement(firstSuggestion);
+        return this;
+    }
+
+    // Reopen Search Panel
+    public HomePage reopenSearchPanel() {
+
+        clickElement(searchBar);
+        return this;
+    }
+
+    // Open Bedroom Dropdown
+    public HomePage openBedroomDropdown() {
+
+        clickElement(bedroomDropdown);
+        return this;
+    }
+
+    // Select 2 BHK
+    public HomePage selectTwoBhk() {
+
+        clickElement(twoBhkOption);
+        return this;
+    }
+
+    // Click Final Search Button
+    public HomePage clickSearchButton() {
+
+        clickElement(searchButton);
         return this;
     }
 }
