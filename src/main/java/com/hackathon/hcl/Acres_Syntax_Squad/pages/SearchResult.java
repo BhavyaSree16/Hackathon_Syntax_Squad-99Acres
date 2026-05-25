@@ -1,13 +1,11 @@
 package com.hackathon.hcl.Acres_Syntax_Squad.pages;
 
-import java.time.Duration;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.hackathon.hcl.Acres_Syntax_Squad.base.BasePage;
 
@@ -21,16 +19,16 @@ public class SearchResult extends BasePage {
     // Open First Property
     public PropertyPage openFirstProperty() {
 
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(10));
-
         int attempts = 0;
+        int maxAttempts = 3;
 
-        while (attempts < 3) {
+        boolean isClicked = false;
+
+        while (attempts < maxAttempts) {
 
             try {
 
-                // Freshly locate element every retry
+                // Freshly locate property each retry
                 WebElement firstProperty =
                         driver.findElement(
                                 By.xpath("(//div[contains(@class,'PseudoTupleRevamp__contentWrapAb')]//a[@title])[1]")
@@ -38,6 +36,8 @@ public class SearchResult extends BasePage {
 
                 // Click Property
                 firstProperty.click();
+
+                isClicked = true;
 
                 break;
 
@@ -47,6 +47,14 @@ public class SearchResult extends BasePage {
 
                 System.out.println("Retrying due to stale element...");
             }
+        }
+
+        // If click failed after retries
+        if (!isClicked) {
+
+            throw new RuntimeException(
+                    "Unable to click first property after retries"
+            );
         }
 
         // Switch To New Tab

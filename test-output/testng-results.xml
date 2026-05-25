@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-25T14:40:45 IST" name="99Acres Suite" finished-at="2026-05-25T14:41:02 IST" duration-ms="17281">
+  <suite started-at="2026-05-25T14:44:12 IST" name="99Acres Suite" finished-at="2026-05-25T14:44:29 IST" duration-ms="16755">
     <groups>
     </groups>
-    <test started-at="2026-05-25T14:40:45 IST" name="Property Search Test" finished-at="2026-05-25T14:41:02 IST" duration-ms="17281">
+    <test started-at="2026-05-25T14:44:12 IST" name="Property Search Test" finished-at="2026-05-25T14:44:29 IST" duration-ms="16755">
       <class name="com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest@47eaca72]" started-at="2026-05-25T14:40:45 IST" name="setUp" finished-at="2026-05-25T14:40:48 IST" duration-ms="3377" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest@47eaca72]" started-at="2026-05-25T14:44:12 IST" name="setUp" finished-at="2026-05-25T14:44:15 IST" duration-ms="3032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testPropertySearchFlow()[pri:0, instance:com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest@47eaca72]" started-at="2026-05-25T14:40:48 IST" name="testPropertySearchFlow" finished-at="2026-05-25T14:41:02 IST" duration-ms="13435" status="PASS">
+        <test-method signature="testPropertySearchFlow()[pri:0, instance:com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest@47eaca72]" started-at="2026-05-25T14:44:15 IST" name="testPropertySearchFlow" finished-at="2026-05-25T14:44:28 IST" duration-ms="13128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPropertySearchFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest@47eaca72]" started-at="2026-05-25T14:41:02 IST" name="tearDown" finished-at="2026-05-25T14:41:02 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest@47eaca72]" started-at="2026-05-25T14:44:28 IST" name="tearDown" finished-at="2026-05-25T14:44:29 IST" duration-ms="527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
