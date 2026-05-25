@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hackathon.hcl.Acres_Syntax_Squad.base.BasePage;
+import com.hackathon.hcl.Acres_Syntax_Squad.utils.ConfigReader;
 
 public class HomePage extends BasePage {
 
@@ -28,7 +29,7 @@ public class HomePage extends BasePage {
     private WebElement searchInput;
 
     // First Suggestion
-    @FindBy(xpath = "(//ul[@id='suggestions_custom']//li)[1]")
+    @FindBy(xpath = "(//ul[@id='suggestions_custom']//li)[2]")
     private WebElement firstSuggestion;
 
     // Search Panel / Search Bar
@@ -66,13 +67,11 @@ public class HomePage extends BasePage {
         return this;
     }
 
-    // Enter Location
     public HomePage enterLocation() {
 
-        enterText(searchInput, "Pune");
+        enterText(searchInput, ConfigReader.getLocation());
         return this;
     }
-
     // Select First Suggestion
     public HomePage selectFirstSuggestion() {
 

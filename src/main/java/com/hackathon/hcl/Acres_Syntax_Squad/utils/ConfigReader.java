@@ -32,4 +32,8 @@ public class ConfigReader {
     public static int getTimeout() {
         return Integer.parseInt(properties.getProperty("timeout"));
     }
+    
+    public static String getLocation() {
+        return properties.getProperty("location");
+    }
 }
